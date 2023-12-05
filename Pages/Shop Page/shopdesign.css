@@ -1,0 +1,272 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --maincolor: rgb(53, 49, 49);
+    --buttonhover: rgb(218, 156, 42);
+    --button-bordercolor: white;
+}
+
+body {
+    animation-name: opacity;
+    animation-duration: 0.5s;
+    animation-timing-function: infinite;
+}
+
+/* Navigation Top / ნავიგაციის თავი */
+
+
+.asbl-1 {
+    color: black;
+}
+
+.nav__top {
+    width: 100%;
+    height: 3.5vh;
+}
+
+.nav__top-d {
+    width: 100%;
+    height: 100%;
+}
+
+.nav__top-icons {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    position: relative;
+    right: 15px;
+    gap: 10px;
+    font-size: 20px;
+    width: 100%;
+    height: 100%;
+}
+
+.nav__top-icon {
+    cursor: pointer;
+}
+
+.nav__top-d {
+    display: flex;
+    align-items: center;
+}
+
+.mdb-m {
+    margin-bottom: 0px;
+    position: relative;
+    font-family: 'Roboto', sans-serif;
+    left: 10px;
+    width: 100%;
+}
+
+/* Navigation / ნავიგაცია */
+
+.nav {
+    z-index: 100000000000000000000;
+    position: sticky;
+    top: 0px;
+    width: 100%;
+    height: 7vh;
+    background-color: var(--maincolor);
+}
+
+.nav__place {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    width: 100%;
+    height: 100%;
+}
+
+.nav__buttons-list {
+    margin-bottom: 0px;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Roboto', sans-serif;
+    position: relative;
+    right: 1%;
+    gap: 30px;
+    display: flex;
+    color: white;
+    text-decoration: none;
+    list-style: none;
+}
+
+.nav__buttons-text {
+    transition: 0.4s all ease;
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+    font-size: 19px;
+}
+
+.l-button {
+    padding: 7px;
+    background-color: rgb(96, 96, 221);
+    border-radius: 10px;
+}
+
+.selected {
+    color: var(--buttonhover);
+    border-bottom: 1px solid var(--buttonhover);
+}
+
+.Dbac:hover {
+    color: var(--buttonhover);
+}
+
+.nav__title {
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    font-family: 'Poppins', sans-serif;
+    font-size: 30px;
+    color: white;
+    position: absolute;
+    left: 20px;
+}
+
+.Dbac-l:hover {
+    background-color: rgb(108, 108, 223);
+}
+
+.cards {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: center;
+}
+
+.slide {
+    width: 100%;
+    height: 83vh;
+}
+
+.carousel-item {
+    width: 100%;
+    height: 89.5vh;
+}
+
+.card-group {
+    gap: 30px;
+}
+
+.cards {
+    width: 100%;
+    height: 100vh;
+}
+
+.card {
+    height: 380px !important;
+}
+
+/*
+*
+* ==========================================
+* FOR DEMO PURPOSE
+* ==========================================
+*
+*/
+
+.cards {
+    background: #ff5f6d;
+    background: -webkit-linear-gradient(to right, #ff5f6d, #ffc371);
+    background: linear-gradient(to right, #ff5f6d, #ffc371);
+    min-height: 100vh;
+}
+
+#button-addon1 {
+    color: #ffc371;
+}
+
+.bg-white {
+    color: #ffc371;
+}
+
+.form-control::placeholder {
+    font-size: 0.95rem;
+    color: #aaa;
+    font-style: italic;
+}
+
+.form-control.shadow-0:focus {
+    box-shadow: none;
+}
+
+.burger-bar {
+    float: left;
+    font-size: 30px;
+    display: none;
+    position: relative;
+    margin-right: 30px;
+}
+
+.bars {
+    color: white;
+}
+
+@media screen and (max-width: 768px) {
+    .nav__buttons-list {
+        display: none;
+    }
+
+    .burger-bar {
+        display: flex;
+    }
+
+    .carousel-item {
+        height: 512px;
+    }
+    
+    .carousel-control-next {
+        height: 512px;
+    }
+
+    .carousel  {
+        height: 512px;
+    }
+
+    .cards {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        height: 1800px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+
+    .carousel-item {
+        height: 312px;
+    }
+    
+    .carousel-control-next {
+        height: 312px;
+    }
+
+    .carousel  {
+        height: 312px;
+    }
+
+    .nav__title {
+        font-size: 24px;
+    }
+}
+
+@keyframes opacity {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
